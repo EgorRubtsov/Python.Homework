@@ -14,7 +14,7 @@ chocolate = length * width     #Вводим эту переменную для 
                                # нам обязательно пришлось ее разломить, то есть если человек захочет съесть шоколад целиком, 
                                # не разламывая, это не будет соответствовать проверки условия на разлом шоколадки.
 
-if (number % length == 0   or number % width == 0) and number < chocolate:
+if (number % length == 0   or number % width == 0) and number < chocolate and number > 0:
 
     print('Вы можете разломить шоколадку на два прямоугольника :)')
 
