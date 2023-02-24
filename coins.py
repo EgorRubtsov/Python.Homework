@@ -28,13 +28,17 @@ for i in range(n):
 
 if countEagles > countTails:
     minCoins = n - countEagles
+    if minCoins == 0: print('Ничего не нужно переворачивать, у вас одна монета')
+    else: print(f'Необходимо перевернуть {minCoins} решек')
 
-    print(f'Необходимо перевернуть {minCoins} решек')
+    
 
 if countTails > countEagles:
     minCoins = n - countTails
+    if minCoins == 0: print('Ничего не нужно переворачивать, у вас одна монета')
+    else: print(f'Необходимо перевернуть {minCoins} орлов') 
 
-    print(f'Необходимо перевернуть {minCoins} орлов')
+    
 
 if countTails == countEagles:
 
