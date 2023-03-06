@@ -30,9 +30,10 @@ for i in range(n):
     if sum > max:
         max = sum
     # print(max)              #для наглядности
-    temp = a[0]
+    # temp = a[0]
+    a.append(a[0])
     a.pop(0)
-    a.append(temp)
+    
     print(*a)           # для наглядности какой получается список, после перестановок
 
 print(max)
